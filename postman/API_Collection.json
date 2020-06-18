@@ -1,0 +1,39 @@
+{
+	"info": {
+		"_postman_id": "046992d2-9987-4081-b71e-48d137159586",
+		"name": "API_Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Schedule Email Sending",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\":\"rahulsarin.friend@gmail.com\",\n\t\"subject\":\"Hello Dude\",\n\t\"body\":\"body message here\",\n\t\"dateTime\":\"2020-06-01T18:56:00\",\n\t\"timeZone\":\"Asia/Kolkata\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/scheduleEmail",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"scheduleEmail"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
